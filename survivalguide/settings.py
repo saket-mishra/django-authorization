@@ -14,14 +14,17 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 import os
 from django.conf import settings
 
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = 'ir4ot_)200ii8ga+px206o@6f(s26@(r4mk6*z)_36st89t4*e'
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATABASES = settings.DATABASES
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ir4ot_)200ii8ga+px206o@6f(s26@(r4mk6*z)_36st89t4*e'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
