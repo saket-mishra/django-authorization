@@ -1,7 +1,7 @@
 {% extends 'layouts/base.html' %}
 
-{% block headline %}<h1>Welcome to Saket Mishra's Authorization System</h1>{% endblock headline %}
+{% block headline %}<h1><p>Hello{% if user.is_authenticated %} {{ user.username }} Welcome to Saket Mishra's authentication system{% endif %}!</p></h1>{% endblock headline %}
 
 {% block content %}
-<p>Hello{% if user.is_authenticated %} {{ user.username }}{% endif %}!</p>
+
 {% endblock %}
